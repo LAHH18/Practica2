@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Practica 2</title>
+    <script>
+        function operacion(simbolo,num1, num2){
+            let res;
+            switch(simbolo){
+                case '+':
+                    res= num1 + ' + ' + num2 + ' = ' + (num1+num2);
+                    break;
+                case '-':
+                    res= num1 + ' - ' + num2 + ' = ' + (num1 - num2);
+                    break;
+                case '*':
+                    res= num1 + ' * ' + num2 + ' = ' + (num1 * num2);
+                    break;
+                case '/':
+                    res= num1 + ' / ' + num2 + ' = ' + (num1 / num2);
+                    break;
+
+            }
+
+            document.getElementById('resultado').innerHTML = res;
+
+        }
+    </script><!--Cierre de script-->
+</head>
+<body>
+
+    <header>
+        <h1>Calculadora de Operaciones Basicas</h1>
+    </header>
+
+    <!--Clase para acomodar los elementos de la calculadora-->
+    <section class="contenedor">
+        <h2>Calculadora</h2> 
+        <div class="contenedor--resultado"><!--Clase mostar el resultado-->
+            <p id="resultado"></p>
+        </div>
+
+        <div class="button"><!--Clase para botones-->
+            <button type="button" onclick="operacion('+',24,8)">+</button>
+            <button type="button" onclick="operacion('-',24,8)">-</button>
+            <button type="button" onclick="operacion('*',24,8)">x</button>
+            <button type="button" onclick="operacion('/',24,8)">/</button>
+        </div>
+    </section>
+    
+    <footer>
+        <p>Creado por Luis Angel Hdez Hdez</p>
+    </footer>
+
+</body>
+</html>

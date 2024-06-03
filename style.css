@@ -1,0 +1,104 @@
+:root{
+    --primario: #FFDB58;
+    --gris: #3B4584;
+    --blanco: #fff;
+    --negro: #000;
+    --tercero: #FFDB58;
+}
+
+/*Estilo de textos*/
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--blanco);
+}
+
+h2{
+    padding: 10px;
+    margin: 0;
+    font-size: 25px;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;/*El texto se acomoda centrado*/
+    background-color: var(--primario);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*Body*/
+body{
+    background-color: var(--gris);
+    margin: 0;
+    /*Asigna un valor de altura minimo*/
+    min-height: 100vh;
+    /*Cambia el acomodo de la estructura*/
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: var(--primario);
+    margin: 0;
+    padding: 10px 0;
+    margin-bottom: 4%;
+}
+
+.contenedor{
+    box-shadow: 0px 5px 20px 1px rgba(97,97,97,0.6);
+    border-radius: 10px;
+    width: 20rem;
+    margin: 3rem auto 5rem auto;
+    border: 1px solid var(--primario);/*Da un borde al contenedor*/
+    flex: 1;/*Llna todo el espacio entre el header y el footer*/
+}
+
+.contenedor--resultado{
+    background-color: #000000;
+    padding: 2px;
+    border-radius: 8px;
+    border: 1px solid #000;/*Da un borde*/
+    margin: 2rem 2rem 0 2rem;
+    text-align: left;
+    color: var(--blanco);
+    align-items: center;
+    height: 3rem;
+}
+
+.button{
+    display: flex;
+    justify-content: space-between;/*Acomoda los botones*/
+    margin: 15px 15px;
+    padding-bottom: 15px;
+}
+
+button{
+    margin: 1rem 0 0 0;/*Margen de separacion*/
+    width: 15%;
+    height: 2.2rem;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: var(--negro);
+    color: var(--blanco);
+    border-radius: 10px;
+    cursor: pointer;/*Hace que muestre el puntero al pasar por el boton*/
+}
+button:hover{
+    background-color: var(--tercero);
+    color: var(--negro);
+}
+
+
+
+footer{
+    background-color: black;
+}
+footer p {
+    color: white;
+    text-align: center;
+}
+
